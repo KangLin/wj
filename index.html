@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>    
+<title>深圳市意酷网络有限公司</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<style>
+.section {position:relative; text-align: center; font: 20px "楷体"; color: #fff;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		verticalCentered: true,
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		'navigation': true,
+		navigationColor: '#fff',
+    	navigationTooltips: ['公司介绍', '机房介绍', '服务', '联系方式'],
+		slidesNavigation: false,
+	});
+});
+</script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=您申请的key值&callback=init"></script>
+<script>
+    function init(){
+        var map = new AMap.Map('container', {
+            center: [113.936328,22.543616],
+            zoom: 18
+        });
+    	//添加点标记，并使用自己的icon
+		new AMap.Marker({
+			map: map,
+			position: [113.936328,22.543616],       
+		});
+        map.plugin(["AMap.ToolBar"], function() {
+            map.addControl(new AMap.ToolBar());
+        });
+    }
+</script>
+</head>
+
+<body>
+
+<div id="dowebok">
+	<div class="section section1">
+		<h2>公司介绍</h2>
+		<p class="p1">深圳市意酷网络有限公司是电信级的商业INTERNET数据中心，拥有直联国内最大骨干网CHINANET的大型网络接入平台。公司成立于2010年，是电信服务商、互联网增值服务商。主要业务涵盖互联网接入服务(ISP)、互联网络内容服务（ICP）、数据中心（IDC）及电子商务及网络营销等基于互联网技术的全线服务。</p>
+		<p class="p2">地址：深圳市南山区科技园中西片区高新中三道9号GDC环球数码大厦5楼<br>
+		   业务咨询：88868026  13715386685   伍洁宇      传真：61640080</p>
+	</div>
+	<div class="section section2">
+		<div class="slide slide1">
+			<h2>环球数码数据中心简介</h2>
+			<p class="p1">环球数码数据中心机房是环球数码跟深圳市政府投资的深圳市云计算中心，位置于腾讯新大楼附近的环球数码大厦，交通方便。硬件条件、带宽条件都非常好，是深圳最好主机托管的机房，欢迎来机房参观面谈。</p>
+			<img class="img1" src="images/2-1.png"></img>
+		</div>
+		<div class="slide slide2">
+			<h2>机房电力系统</h2>
+			<p>我司数据中心具有四路电力保障，分别以下：</p>
+			<ol>
+				<li>高保障电1 接松坪山高压配电室；</li>
+				<li>高保障电2 接科技园高压配电室；</li>
+				<li>市电接入；</li>
+				<li>650KW 柴油发电机；</li>
+			</ol>
+			<p>电力正常供应时，走市电一电路，已在负一楼高配电房做两回路接入；当市电一失效时，自动无缝切换至高保障电1 电路；当高保障电1 失效时，自动无疑切换至高保障电2 电路；当市电一、与高保障电1 和高保障电2 都同时失效时，开启柴油发电机，以作正常运行；</p>
+		</div>
+		<div class="slide slide3">
+			<h2>机房空调系统</h2>
+			<img class="img2" src="images/2-2.jpg"></img>
+			<ol>
+				<li class="li_left">主用空调为美国进口CAROSS 卡洛斯，精密空调2 台——IDC数据中心专用空调、并达到恒温（温度为22-25 度）、恒湿(湿度为45%-50%)</li>
+				<li class="li_left">备用空调为日本进口HITACHI 日立，中央空调8 台，如果主空调维护、维修时，备用空调将全部开启；</li>
+			</ol>
+		</div>
+		<div class="slide slide4">
+			<h2>机房网络系统</h2>
+			<img src="images/2-3.jpg"></img>
+			<ol>
+				<li class="li_left">我司数据中心采用全CISCO 思科网络设备，核心路由12000系统，核心交换机6500 系统，二层接入交换机为2950 系统；核心网络设备均采用双电源、双引擎，避免单点故障导致网络问题；</li>
+				<li class="li_left">IP 地址规划，我司全网采用子网掩码为27 位，2 机柜为一个子网，保证ARP 出现后的影响面最少，同时也保证用最短的时间内寻找ARP 攻击源；</li>
+			</ol>
+		</div>
+		<div class="slide slide5">
+			<h2>机房环境系统</h2>
+			<img src="images/2-4.jpg"></img>
+			<ol>
+				<li class="li_left">空调监控：监控机房每处温度、湿度、风力强度；</li>
+			    <li class="li_left">电力监控：监控机房输入总电压情况、输入UPS 配电箱情况、输入UPS 配电箱情况、输入列头柜情况、输入到负载情况；</li>
+				<li class="li_left">UPS 监控：监控UPS 的输入电压、电流、功率，输出到负载的电压、电流、功率等；</li>
+				<li class="li_left">安防监控：机房内部每条过道均有一个监控，两边过道的监控相互监控，机房内部合计15 个监控摄像头；机房外走廊有5 个监控摄像头，分别监控着前、后机房大门，强、弱电井大门、每个可进入走廊的门均在监控内；</li>
+			</ol>
+		</div>
+		<div class="slide slide6">
+			<h2>机房门禁系统</h2>
+			<ol>
+				<li class="li_left">从您进入大厦那一刻，保安为第一道门；</li>
+			    <li class="li_left">五楼出电梯为第二道，第一个门禁；</li>
+				<li class="li_left">过了第一个门禁走到机房外走廊为第三道门，第二个门禁；</li>
+				<li class="li_left">进了机房外走廊便进入指纹门禁及刷卡门禁，两门禁同时开户时，方能进入机房托管区域；</li>
+				<li class="li_left">同时核心机房与配电房均有门禁系统以及固定门锁系统；</li>
+				<li class="li_left">当您从机房出去时，均需要我司值班人员刷卡方能出机房；</li>
+			</ol>
+		</div>
+	</div>
+	<div class="section section3">
+		<h3>提供7*24小时的技术服务；</h3>
+		<img src="images/3-1.jpg"></img>
+	</div>
+	<div class="section section4">
+		<div id="container"></div>	        	
+		<p>业务咨询：88868026  13715386685   伍洁宇      传真：61640080<br>
+			地址：深圳市南山区科技园中西片区高新中三道9号GDC环球数码大厦5楼</p>
+        <p>公交、出租等各项交通十分便捷，利于客户进行现场维护。乘坐地铁二号线到深大北门站或者乘坐N1路 N4路 N5路 N8路 E10路 N11路 19路 21路 36路 39路 42路 70路 78路 79路 81路 81路区间 101路 113路 123路 M200路 204路 M205路 210路 M222路 223路 233路 234路 245路 301路 310-315环线 311路 324路 327路 338路 350路 395路 B728路 高峰专线⑧路公交车到深大北门站下车沿科技中二路往北走约500米。</p>
+	</div>
+</div>
+
+</body>
+</html>

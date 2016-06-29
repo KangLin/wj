@@ -1,0 +1,9 @@
+.bg{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
+.section1 .p1{text-align:left; width:95%;}
+.section1 .p2{text-align:right; width:95%;}
+.section2 .p1{text-align:left; width:95%;}
+.section2 .img1{width:58%; height:79%;}
+.section2 .img2{width:60%; height:50%;}
+.section4 p{text-align:left; width:95%;}
+.li_left{text-align:left; left: 100px; top: 100px; width:95%;}
+slide{position: absolute; top: 0px; left:0px; width:90%;}
