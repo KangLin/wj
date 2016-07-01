@@ -1,8 +1,8 @@
-/* ”“≤‡µº∫Ω */
-
 #fp-nav ul li .fp-tooltip.right {
 	color:#00ff00;
 }
+
+li{text-align:left; width:90%; margin:auto}
 
 .bg{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;}
 p{
@@ -24,23 +24,21 @@ h2{opacity:0;transition: all 1s ease 0s;}
 	transition-delay: 0s;
 }
 
-.section1 .p1{text-align:right; width:90%; margin:auto}
+.section1 .p1{text-align:right; width:90%; margin:auto;}
 .section1{background:url(../images/1.jpg);}
 
 .section2 .img1{width:58%; height:79%;}
 .section2 .img2{width:60%; height:50%;}
-.section2{background:url(../images/2.jpg);}
+.section2{background:url(../images/5.png);}
 
-.section3{background:url(../images/3.jpg);}
-.section4{background:url(../images/4.jpg);}
+.section3{background:url(../images/2.jpg);}
 
-li{text-align:left; width:90%; margin:auto}
+.addresss{top:80%; left:5%; width:90%; height:10%;}
+#container{top:5%; left:5%; width:90%; height:60%;}
+.section4{background:url(../images/3.jpg);}
 
 .active .hgroup {
     opacity: 1;
     transform: scale(1, 1);
     transition-delay: 0.7s;
 }
-
-.address{margin-top:10%; width:90%;}
-#container{margin:auto; width:90%; height:60%}
